@@ -1,7 +1,6 @@
 import os
-
-def rm_r("Users\RemoveKebab\OneDrive\Desktop\heh"):
-    for i in os.listdir("Users\RemoveKebab\OneDrive\Desktop\heh"):
+def rm_r(path):
+    for i in os.listdir(path):
         p = os.path.join(path,i)
         
         if os.path.isdir(p):
