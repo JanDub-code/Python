@@ -16,9 +16,14 @@ class SmartFridge:
         td = date.today() - self.birth_date
         print('I am {} days old.'.format(td.days))
 
+    def add_food(self, food):
+        self.food = food
+        print(f'I have {self.food} in my fridge.')
+
 myfridge = SmartFridge('Bosch', 'GSX961NSAZ')
 
 
 print(myfridge.greet())
 print(myfridge.tell_age())
+print(myfridge.add_food('milk'))
 
