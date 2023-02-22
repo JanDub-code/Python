@@ -20,6 +20,10 @@ class SmartFridge:
         self.food = food
         print(f'I have {self.food} in my fridge.')
 
+    def remove_food(self, food):
+        self.food = food
+        print(f'I have {self.food} in my fridge.')  
+
 myfridge = SmartFridge('Bosch', 'GSX961NSAZ')
 
 
