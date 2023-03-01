@@ -1,0 +1,2 @@
+def pozdrav():
+    return("Hello!")
