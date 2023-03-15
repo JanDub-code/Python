@@ -2,7 +2,8 @@ from datetime import date
 
 class SmartFridge:
     fridge_count = 0
-    
+
+    # přidat food list
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
@@ -27,7 +28,8 @@ class SmartFridge:
 myfridge = SmartFridge('Bosch', 'GSX961NSAZ')
 
 
-print(myfridge.greet())
-print(myfridge.tell_age())
-print(myfridge.add_food('milk'))
+myfridge.greet()
+myfridge.tell_age()
+myfridge.add_food('milk')
+myfridge.add_food('eggs')
 
