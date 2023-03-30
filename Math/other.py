@@ -8,10 +8,11 @@ from yahoo_fin.stock_info import get_stats_valuation
 import pandas as pd
 
 ticker = input("vloz ticker firmy kterou chceš napr. APPL: ")
+
+
+
 data2 = si.get_data(ticker)
 print(data2.head())
-
-	
 print(get_balance_sheet(ticker))
 print(get_stats(ticker))
 valuations = get_stats_valuation(ticker)
