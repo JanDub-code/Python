@@ -29,6 +29,10 @@ class SmartFridge:
     def list_of_food(self):
         print(f"List of food is : {self.food}")
 
+    def __del__(self):
+        SmartFridge.fridge_count -= 1
+        print(f'{self.brand} {self.model} has been deleted')
+
 myfridge = SmartFridge('Bosch', 'GSX961NSAZ')
 
 
@@ -37,5 +41,7 @@ myfridge.tell_age()
 myfridge.add_food('milk')
 myfridge.add_food('eggs')
 myfridge.add_food('cheese')
+myfridge.add_food("mountain dew pack")
 myfridge.remove_food('milk')
-myfridge.list_of_food()
+myfridge.list_of_food() 
+del myfridge
