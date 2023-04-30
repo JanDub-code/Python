@@ -9,7 +9,8 @@ import pandas as pd
 
 ticker = input("vloz ticker firmy kterou chceš napr. APPL: ")
 
-
+get_balance_sheet('nflx')
+ 
 
 data2 = si.get_data(ticker)
 print(data2.head())
